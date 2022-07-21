@@ -58,7 +58,7 @@ ul li {
 }
 .btn1 {
   padding: 15px 30px;
-  margin-left: 5px;
+  margin-left: 10px;
   background: #0947b5;
   border: none;
   border-radius: 10px;
@@ -70,5 +70,44 @@ ul li {
   color: #0947b5;
 }
 .tr1 {
-  background-image: linear-gradient(rgb(233, 60, 147), yellow);
+  background-image: linear-gradient(rgb(20, 173, 33), rgb(148, 160, 167));
+}
+#card1 {
+  width: 69%;
+  margin: 0 auto;
+}
+#card1 img {
+  width: 100%;
+  float: left;
+  border-radius: 10px 10px 0px 0px;
+}
+.card1div {
+  background: white;
+  width: 100%;
+  height: 50px;
+  float: left;
+  border-radius: 0px 0px 10px 10px;
+}
+#banner {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bannerback2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+#banner h2 {
+  margin: 0;
+
+  float: left;
+
+  padding-top: 49px;
+  padding-left: 41px;
+}
+#slider {
+  width: 100%;
+}
+#slider img {
+  width: 30%;
+  margin-left: 10px;
 }
