@@ -70,8 +70,11 @@ ul li {
   color: #0947b5;
 }
 .tr1 {
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(148, 160, 167));
+  background-image: url("../images/zombiebg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 #card1 {
   width: 69%;
   margin: 0 auto;
