@@ -56,6 +56,10 @@ ul li {
 .subul2 {
   margin-top: 31px;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .btn1 {
   padding: 15px 30px;
   margin-left: 10px;
@@ -170,7 +174,7 @@ input:checked + .slider:before {
   transform: translateX(12px);
 }
 
-/* Rounded sliders */
+
 .slider.round {
   border-radius: 34px;
 }
