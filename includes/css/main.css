@@ -185,3 +185,15 @@ input:checked + .slider:before {
 table {
   border-collapse: collapse;
 }
+.buynow {
+  display: none;
+}
+#assetdiv {
+  overflow: hidden;
+}
+#assetdiv:hover .buynow {
+  display: block;
+}
+#assetdiv img:hover {
+  transform: scale(1.1);
+}
