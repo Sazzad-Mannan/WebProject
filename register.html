@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Arts Buy & Sell</title>
+    <link rel="icon" href="includes/images/icon.png" />
     <link rel="stylesheet" href="includes/css/main.css" />
   </head>
   <body>
@@ -13,7 +14,7 @@
       border="1"
       width="500px"
       style="
-        margin: 100px auto;
+        margin: 30px auto;
         table-layout: fixed;
         text-align: center;
         border-collapse: collapse;
@@ -22,21 +23,24 @@
       <col width="30%" />
       <col width="70%" />
       <tr>
+        <td colspan="2"><img src="includes/images/logo.png" alt=""></td>
+    </tr>
+      <tr>
         <td colspan="2"><h1>Registration</h1></td>
       </tr>
       <tr>
           <form action="functions.php" method="post">
         <td>First Name:</td>
-        <td><input type="text" name="fname" id="" style="width: 90%" /></td>
+        <td><input type="text" name="fname" required id="" style="width: 90%;padding: 10px;" /></td>
       </tr>
       <tr>  <td>Last Name:</td>
-        <td><input type="text" name="lname" id="" style="width: 90%" /></td>
+        <td><input type="text" name="lname" id="" required style="width: 90%;padding: 10px;" /></td>
       </tr>
       <tr>  <td>Email:</td>
-        <td><input type="email" name="email" id="" style="width: 90%" /></td>
+        <td><input type="email" name="email" id="" required style="width: 90%;padding: 10px;" /></td>
       </tr>
       <tr>  <td>Gender:</td>
-        <td><select name="gender" id="" style="width: 90%;">
+        <td><select name="gender" id="" style="width: 97%;padding: 10px;">
             <option value="">Male</option>
             <option value="">Female</option>
         </select></td>
@@ -44,14 +48,15 @@
       
       <tr>
         <td>Password:</td>
-        <td><input type="password" name="password" id="" style="width: 90%" /></td>
+        <td><input type="password" name="password" required id="" style="width: 90%;padding: 10px;" /></td>
       </tr>
       <tr>
         <td>Confirm Password:</td>
-        <td><input type="password" name="cpassword" id="" style="width: 90%" /></td>
+        <td><input type="password" name="cpassword" id="" required style="width: 90%;padding: 10px;" /></td>
       </tr>
       <tr><td colspan="2"><input type="submit" class="btn1" value="Submit">
       </form></td></tr>
+      <tr><td colspan="2"><a href="">Terms & conditions</a></td></tr>
 <tr>
     
     <td colspan="2">Already have account? <a href="login.html"><button class="btn1">Login</button></a></td>
