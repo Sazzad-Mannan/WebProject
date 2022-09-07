@@ -1,0 +1,43 @@
+
+
+
+var slider = tns({
+  container: ".my-slider",
+  items: 3,
+  slideBy: 1,
+  controlsPosition: "bottom",
+  navPosition: "bottom",
+  mouseDrag: true,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  controlsContainer: "#custom-control",
+  rewind: true,
+    swipeAngle: false,
+  // mode: 'gallery',
+   speed: 400,
+   //animateIn: "scale",
+  // controls: false,
+  // nav: false,
+  //edgePadding: 20,
+  // loop: false,
+});
+var slider2 = tns({
+    container: ".my-slider2",
+    items: 3,
+    slideBy: 1,
+    controlsPosition: "bottom",
+    navPosition: "bottom",
+    mouseDrag: true,
+    autoplay: false,
+    autoplayButtonOutput: false,
+    controlsContainer: "#custom-control2",
+    rewind: true,
+    swipeAngle: false,
+    // mode: 'gallery',
+     speed: 400,
+     //animateIn: "scale",
+    // controls: false,
+    // nav: false,
+    //edgePadding: 20,
+     loop: true,
+  });

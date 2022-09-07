@@ -10,7 +10,7 @@
   </head>
   <body>
     <table
-      border="1"
+      
       width="500px"
       style="
         margin: 40px auto;

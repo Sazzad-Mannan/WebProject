@@ -1,3 +1,9 @@
+<?php session_start();
+include "includes/db/config.php";
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,151 +15,15 @@
     <link rel="stylesheet" href="includes/css/main.css" />
   </head>
   <body>
-    <table border="1" width="1300px" style="table-layout: fixed" align="center">
+    <table  width="1300px" style="table-layout: fixed" align="center">
       <col width="16.67%" />
       <col width="16.67%" />
       <col width="16.67%" />
       <col width="16.67%" />
       <col width="16.67%" />
       <col width="16.67%" />
-      <tr height="60px" width="100%">
-        <td>
-          <a href="index.html"
-            ><img
-              src="includes/images/logo.png"
-              alt="Website logo"
-              height="auto"
-              width="100%"
-          /></a>
-        </td>
-        <td colspan="2">
-          <form action="" method="post">
-            <input
-              type="text"
-              name="search1"
-              class="search1"
-              placeholder="Search items,collections and accounts"
-            />
-          </form>
-        </td>
-        <td colspan="2">
-          <nav>
-            <ul>
-              <li class="li1">
-                <a href="explore-collections.html">Explore</a>
-                <ul class="subul1" id="subul1">
-                  <li>
-                    <a href="assets.html"
-                      ><img src="includes/images/icon.png" alt="" /> All NFTs</a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" /> Solana
-                      NFTs</a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" /> Arts</a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" />
-                      Collectibles</a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" /> Domain
-                      Names</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="li1">
-                Stats
-                <ul class="subul1" id="subul1">
-                  <li><a href=""> Rankings</a></li>
-                  <li><a href=""> Activity</a></li>
-                </ul>
-              </li>
-
-              <li class="li1">
-                Resources
-                <ul class="subul1" id="subul1">
-                  <li><a href=""> Help Center</a></li>
-                  <li><a href=""> Platform Status</a></li>
-                  <li><a href=""> Partners</a></li>
-                  <li><a href=""> Gas-Free Marketplace</a></li>
-                  <li><a href=""> Taxes</a></li>
-                  <li><a href=""> Blog</a></li>
-                  <li><a href=""> Docs</a></li>
-                  <li><a href=""> Newsletter</a></li>
-                </ul>
-              </li>
-
-              <li class="li1">Create</li>
-            </ul>
-          </nav>
-        </td>
-        <td class="pro">
-          <nav>
-            <ul>
-              <li class="li1 li2">
-                <img class="proimg" src="includes/images/profile.png" alt="" />
-                <ul class="subul1 subul2" id="subul1">
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" /> Profile</a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" />
-                      Favourites</a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" />
-                      Watchlist</a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" /> My
-                      Collections</a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="includes/images/icon.png" alt="" /> Settings</a
-                    >
-                  </li>
-                  <li>
-                    Night Mode
-                    <label class="switch">
-                      <input type="checkbox" checked />
-                      <span class="slider round"></span>
-                    </label>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="li1 li2">
-                <img class="proimg" src="includes/images/wallet.png" alt="" />
-                <ul class="subul1 subul2" id="subul1">
-                  <li><a href=""> WalletConnect</a></li>
-                  <li><a href=""> MetaMask</a></li>
-                  <li><a href=""> Coinbase Wallet</a></li>
-                  <li><a href=""> Phantom</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+      
+        <?php include "header.php"; ?>
 
           <!--a href="" class="li1">
             <img src="includes/images/profile.png" alt="" />
@@ -168,8 +38,7 @@
           </a>
 
           <img src="includes/images/wallet.png" alt="" /> -->
-        </td>
-      </tr>
+        
       <tr height="120px" width="100%" style="text-align: center">
         <td colspan="6">
           <h1 style="margin-bottom: 0; padding-bottom: 0">Top NFTs</h1>
@@ -415,80 +284,7 @@
         </td>
       </tr>
 
-      <tr height="400px" style="background: rgb(24, 104, 183); color: white">
-        <td colspan="2">
-          <img
-            src="includes/images/logofooter.png"
-            style="width: 50px; height: 50px"
-            alt=""
-          />
-          <br />
-          <a href=""><img src="includes/images/footerlogo2.png" alt="" /></a
-          ><br />
-          <p>
-            The world’s first and largest digital marketplace for crypto
-            collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
-            exclusive digital items.
-          </p>
-        </td>
-        <td>
-          <b>Marketplace</b><br /><br />
-          <a href="">All NFTs</a><br />
-          <a href="">Solana NFTs</a><br />
-          <a href="">Art</a><br />
-          <a href="">Collectibles</a><br />
-          <a href="">Domain Names</a><br />
-          <a href="">Music</a><br />
-          <a href="">Photography</a><br />
-          <a href="">Sports</a><br />
-          <a href="">Trading Cards</a><br />
-          <a href="">Utility</a><br />
-          <a href="">Virtual Worlds</a><br />
-        </td>
-        <td>
-          <b>My Account</b><br /><br />
-          <a href="">Profile</a><br />
-          <a href="">Favourites</a><br />
-          <a href="">Watchlist</a><br />
-          <a href="">My Collections</a><br />
-          <a href="">Settings</a><br /><br /><br />
-          <b>Stats</b><br /><br />
-          <a href="">Rankings</a><br />
-          <a href="">Activity</a><br />
-        </td>
-        <td>
-          <b>Resources</b><br /><br />
-          <a href="">Help Center</a><br />
-          <a href="">Platform Status</a><br />
-          <a href="">Partners</a><br />
-          <a href="">Gas-Free Marketplace</a><br />
-          <a href="">Taxes</a><br />
-          <a href="">Blog</a><br />
-          <a href="">Docs</a><br />
-          <a href="">Newsletter</a><br /><br /><br /><br />
-        </td>
-        <td>
-          <b>Company</b><br /><br />
-          <a href="">About</a><br />
-          <a href="">Careers</a><br />
-          <a href="">Ventures</a><br />
-          <a href="">Grants</a><br /><br /><br /><br /><br /><br /><br /><br />
-        </td>
-      </tr>
-      <tr height="30px" style="background: rgb(24, 104, 183)">
-        <td colspan="6">
-          <hr style="width: 100%" />
-        </td>
-      </tr>
-
-      <tr height="80px" style="background: rgb(24, 104, 183); color: white">
-        <td colspan="2">© 2022 Rifat Softwares</td>
-        <td colspan="2"></td>
-        <td colspan="2">
-          <a href="">Privacy Policy</a>
-          <a href="">Terms of Services</a>
-        </td>
-      </tr>
+      <?php  include "footer.php"; ?>
     </table>
   </body>
 </html>
